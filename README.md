@@ -1,2 +1,2 @@
 # Calculator
- Calculator project of CHW and JXY。 This is the test text.
+ 这是2021111459程华炜与2021111458季向忆的计算机设计。
