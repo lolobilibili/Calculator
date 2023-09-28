@@ -65,6 +65,10 @@ private:
 //! [9] //! [10]
     enum { NumDigitButtons = 10 };
     Button *digitButtons[NumDigitButtons];
+
+    // QWidget interface
+protected:
+    virtual void keyPressEvent(QKeyEvent *event) override;
 };
 //! [10]
 
