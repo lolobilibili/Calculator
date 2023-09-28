@@ -1,4 +1,3 @@
-// Copyright (C) 2016 The Qt Company Ltd.
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
 
 #include "calculator.h"
@@ -7,6 +6,9 @@
 #include <QGridLayout>
 #include <QLineEdit>
 #include <QtMath>
+#include <QClipboard>
+#include <QApplication>
+#include <cmath>
 
 //! [0]
 Calculator::Calculator(QWidget *parent)
@@ -51,17 +53,27 @@ Calculator::Calculator(QWidget *parent)
     Button *squareRootButton = createButton(tr("Sqrt"), SLOT(unaryOperatorClicked()));
     Button *powerButton = createButton(tr("x\302\262"), SLOT(unaryOperatorClicked()));
     Button *reciprocalButton = createButton(tr("1/x"), SLOT(unaryOperatorClicked()));
+    Button *sinButton = createButton(tr("sin(x)"), SLOT(unaryOperatorClicked()));
+    Button *cosButton = createButton(tr("cos(x)"), SLOT(unaryOperatorClicked()));
+    Button *tanButton = createButton(tr("tan(x)"), SLOT(unaryOperatorClicked()));
     Button *equalButton = createButton(tr("="), SLOT(equalClicked()));
+    Button *copyButton = createButton(tr("Copy"), SLOT(copyClicked()));
+    Button *pasteButton = createButton(tr("Paste"),SLOT(pasteClicked()));
 //! [4]
 
 //! [5]
     QGridLayout *mainLayout = new QGridLayout;
 //! [5] //! [6]
-    mainLayout->setSizeConstraint(QLayout::SetFixedSize);
-    mainLayout->addWidget(display, 0, 0, 1, 6);
+    mainLayout->setSizeConstraint(QLayout::SetMinimumSize);
+    mainLayout->addWidget(display, 0, 0, 1, 7);
     mainLayout->addWidget(backspaceButton, 1, 0, 1, 2);
     mainLayout->addWidget(clearButton, 1, 2, 1, 2);
     mainLayout->addWidget(clearAllButton, 1, 4, 1, 2);
+    mainLayout->addWidget(sinButton, 1, 6, 1, 1);
+    mainLayout->addWidget(cosButton, 2, 6, 1, 1);
+    mainLayout->addWidget(tanButton, 3, 6, 1, 1);
+    mainLayout->addWidget(copyButton, 4, 6, 1, 1);
+    mainLayout->addWidget(pasteButton, 5, 6, 1, 1);
 
     mainLayout->addWidget(clearMemoryButton, 2, 0);
     mainLayout->addWidget(readMemoryButton, 3, 0);
@@ -132,6 +144,16 @@ void Calculator::unaryOperatorClicked()
             return;
         }
         result = 1.0 / operand;
+    } else if (clickedOperator == tr("sin(x)")){
+        result = sin(operand);
+    } else if (clickedOperator == tr("cos(x)")){
+        result = cos(operand);
+    } else if (clickedOperator == tr("tan(x)")){
+        if (int(qRadiansToDegrees(operand)) % 180 == 90){
+            abortOperation();
+            return;
+        }
+        result = tan(operand);
     }
     display->setText(QString::number(result));
     waitingForOperand = true;
@@ -275,7 +297,11 @@ void Calculator::backspaceClicked()
     display->setText(text);
 }
 //! [26]
-
+void Calculator::copyClicked()
+{
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    clipboard->setText(display->text());
+}
 //! [28]
 void Calculator::clear()
 {
@@ -286,7 +312,11 @@ void Calculator::clear()
     waitingForOperand = true;
 }
 //! [28]
-
+void Calculator::pasteClicked()
+{
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    display->setText(clipboard->text());
+}
 //! [30]
 void Calculator::clearAll()
 {

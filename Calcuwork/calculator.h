@@ -1,4 +1,3 @@
-// Copyright (C) 2016 The Qt Company Ltd.
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
 
 #ifndef CALCULATOR_H
@@ -10,6 +9,7 @@ QT_BEGIN_NAMESPACE
 class QLineEdit;
 QT_END_NAMESPACE
 class Button;
+
 
 //! [0]
 class Calculator : public QWidget
@@ -28,6 +28,8 @@ private slots:
     void pointClicked();
     void changeSignClicked();
     void backspaceClicked();
+    void copyClicked();
+    void pasteClicked();
     void clear();
     void clearAll();
     void clearMemory();
@@ -61,7 +63,6 @@ private:
 //! [9]
     QLineEdit *display;
 //! [9] //! [10]
-
     enum { NumDigitButtons = 10 };
     Button *digitButtons[NumDigitButtons];
 };
