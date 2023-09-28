@@ -8,6 +8,7 @@
 #include <QtMath>
 #include <QClipboard>
 #include <QApplication>
+#include <QKeyEvent>
 #include <cmath>
 
 //! [0]
@@ -387,3 +388,21 @@ bool Calculator::calculate(double rightOperand, const QString &pendingOperator)
     return true;
 }
 //! [38]
+
+
+void Calculator::keyPressEvent(QKeyEvent *event)
+{
+    switch(event->key()){
+        case Qt::Key_1: this->digitButtons[1]->click();break;
+        case Qt::Key_2: this->digitButtons[2]->click();break;
+        case Qt::Key_3: this->digitButtons[3]->click();break;
+        case Qt::Key_4: this->digitButtons[4]->click();break;
+        case Qt::Key_5: this->digitButtons[5]->click();break;
+        case Qt::Key_6: this->digitButtons[6]->click();break;
+        case Qt::Key_7: this->digitButtons[7]->click();break;
+        case Qt::Key_8: this->digitButtons[8]->click();break;
+        case Qt::Key_9: this->digitButtons[9]->click();break;
+        case Qt::Key_0: this->digitButtons[0]->click();break;
+    }
+
+}
