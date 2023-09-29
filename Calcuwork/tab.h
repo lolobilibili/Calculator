@@ -2,8 +2,9 @@
 #define TAB_H
 
 #endif // TAB_H
-#include <QTabWidget>
 #include "calculator.h"
+#include "notepad.h"
+#include <QTabWidget>
 
 class Tab : public QWidget{
 
@@ -15,6 +16,7 @@ public:
 private:
     QTabWidget* maintab;
     Calculator* calpage;
+    Notepad* textpage;
 
     // QWidget interface
 protected:

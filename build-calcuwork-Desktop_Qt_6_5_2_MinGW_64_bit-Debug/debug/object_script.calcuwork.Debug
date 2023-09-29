@@ -1,0 +1,10 @@
+debug/button.o
+debug/calculator.o
+debug/main.o
+debug/notepad.o
+debug/tab.o
+debug/qrc_notpad.o
+debug/moc_button.o
+debug/moc_calculator.o
+debug/moc_notepad.o
+debug/moc_tab.o
