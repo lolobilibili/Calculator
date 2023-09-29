@@ -36,3 +36,24 @@ install(TARGETS calculator
     BUNDLE DESTINATION "${INSTALL_EXAMPLEDIR}"
     LIBRARY DESTINATION "${INSTALL_EXAMPLEDIR}"
 )
+
+set(notepad_resource_files
+    "images/bold.png"
+    "images/copy.png"
+    "images/create.png"
+    "images/cut.png"
+    "images/edit_redo.png"
+    "images/edit_undo.png"
+    "images/exit.png"
+    "images/font.png"
+    "images/info.png"
+    "images/italic.png"
+    "images/new.png"
+    "images/open.png"
+    "images/paste.png"
+    "images/pencil.png"
+    "images/print.png"
+    "images/save.png"
+    "images/save_as.png"
+    "images/underline.png"
+)

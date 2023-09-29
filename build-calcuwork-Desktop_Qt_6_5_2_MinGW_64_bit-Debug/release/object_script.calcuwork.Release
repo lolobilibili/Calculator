@@ -1,0 +1,10 @@
+release/button.o
+release/calculator.o
+release/main.o
+release/notepad.o
+release/tab.o
+release/qrc_notpad.o
+release/moc_button.o
+release/moc_calculator.o
+release/moc_notepad.o
+release/moc_tab.o
