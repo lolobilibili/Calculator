@@ -1,14 +1,17 @@
-QT += widgets
+QT += widgets \
+    quick
 
 HEADERS       = button.h \
                 calculator.h \
                 notepad.h \
-                tab.h
+                tab.h \
+                todolist.h
 SOURCES       = button.cpp \
                 calculator.cpp \
                 main.cpp \
                 notepad.cpp \
-                tab.cpp
+                tab.cpp \
+                todolist.cpp
 
 # install
 target.path = $$[QT_INSTALL_EXAMPLES]/widgets/widgets/calculator

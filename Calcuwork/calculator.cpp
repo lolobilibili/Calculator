@@ -146,15 +146,15 @@ void Calculator::unaryOperatorClicked()
         }
         result = 1.0 / operand;
     } else if (clickedOperator == tr("sin(x)")){
-        result = sin(operand);
+        result = sin(operand*M_PI/180);
     } else if (clickedOperator == tr("cos(x)")){
-        result = cos(operand);
+        result = cos(operand*M_PI/180);
     } else if (clickedOperator == tr("tan(x)")){
         if (int(qRadiansToDegrees(operand)) % 180 == 90){
             abortOperation();
             return;
         }
-        result = tan(operand);
+        result = tan(operand*M_PI/180);
     }
     display->setText(QString::number(result));
     waitingForOperand = true;

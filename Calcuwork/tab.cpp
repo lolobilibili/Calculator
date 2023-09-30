@@ -1,5 +1,6 @@
 #include "tab.h"
 #include "calculator.h"
+#include "todolist.h"
 
 #include <QTabWidget>
 #include <QSizePolicy>
@@ -13,8 +14,10 @@ Tab::Tab(QWidget* parent)
     maintab->setFixedSize(400,400);
     calpage = new Calculator(this);
     textpage = new Notepad(this);
+    todopage = new ToDoList(this);
     maintab->addTab(calpage,"Calculator");
     maintab->addTab(textpage,"Notepad");
+    maintab->addTab(todopage,"ToDoList");
 }
 
 
