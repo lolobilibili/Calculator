@@ -1,10 +1,16 @@
 release/button.o
 release/calculator.o
+release/dialog.o
+release/dialog_edit.o
 release/main.o
 release/notepad.o
 release/tab.o
+release/todolist.o
 release/qrc_notpad.o
 release/moc_button.o
 release/moc_calculator.o
+release/moc_dialog.o
+release/moc_dialog_edit.o
 release/moc_notepad.o
 release/moc_tab.o
+release/moc_todolist.o

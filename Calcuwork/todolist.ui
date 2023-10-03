@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Todolist</class>
+ <widget class="QMainWindow" name="Todolist">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Todolist</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>761</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="whatsThis">
+    <string>set current todo unfinished</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionadd"/>
+   <addaction name="actiondelete_cur"/>
+   <addaction name="separator"/>
+   <addaction name="actionfinished"/>
+   <addaction name="actionunfinished"/>
+   <addaction name="actionedit"/>
+   <addaction name="actionClear_finished"/>
+   <addaction name="actionclear"/>
+  </widget>
+  <action name="actionadd">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/add.png</normaloff>:/images/images/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>add</string>
+   </property>
+   <property name="iconText">
+    <string>Add</string>
+   </property>
+   <property name="whatsThis">
+    <string>Add new ToDo</string>
+   </property>
+  </action>
+  <action name="actionfinished">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/finished.png</normaloff>:/images/images/finished.png</iconset>
+   </property>
+   <property name="text">
+    <string>finished</string>
+   </property>
+   <property name="iconText">
+    <string>Finished</string>
+   </property>
+   <property name="whatsThis">
+    <string>Set current Todo finished</string>
+   </property>
+  </action>
+  <action name="actionunfinished">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/delete.png</normaloff>:/images/images/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>unfinished</string>
+   </property>
+   <property name="iconText">
+    <string>Unfinished</string>
+   </property>
+   <property name="whatsThis">
+    <string>Set current Todo unfinished</string>
+   </property>
+  </action>
+  <action name="actiondelete_cur">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/minus.png</normaloff>:/images/images/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>delete_cur</string>
+   </property>
+   <property name="iconText">
+    <string>Delete selected</string>
+   </property>
+   <property name="whatsThis">
+    <string>Delete current Todo</string>
+   </property>
+  </action>
+  <action name="actionclear">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/delete_all.png</normaloff>:/images/images/delete_all.png</iconset>
+   </property>
+   <property name="text">
+    <string>clear</string>
+   </property>
+   <property name="iconText">
+    <string>Clear all</string>
+   </property>
+  </action>
+  <action name="actionedit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/edit.png</normaloff>:/images/images/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>edit</string>
+   </property>
+   <property name="iconText">
+    <string>Edit selected</string>
+   </property>
+   <property name="whatsThis">
+    <string>Edit current Todo</string>
+   </property>
+  </action>
+  <action name="actionClear_finished">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/images/clear.png</normaloff>:/images/images/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear finished</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
