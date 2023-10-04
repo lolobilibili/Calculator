@@ -74,6 +74,7 @@ public:
 
         dateEdit = new QDateEdit(gridLayoutWidget);
         dateEdit->setObjectName("dateEdit");
+        dateEdit->setCurrentSection(QDateTimeEdit::DaySection);
 
         gridLayout->addWidget(dateEdit, 1, 1, 1, 1);
 

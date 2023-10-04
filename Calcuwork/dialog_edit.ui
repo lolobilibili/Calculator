@@ -64,7 +64,11 @@
      <widget class="QLineEdit" name="lineEdit"/>
     </item>
     <item row="1" column="1">
-     <widget class="QDateEdit" name="dateEdit"/>
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="currentSection">
+       <enum>QDateTimeEdit::DaySection</enum>
+      </property>
+     </widget>
     </item>
     <item row="2" column="1">
      <widget class="QPlainTextEdit" name="plainTextEdit"/>
