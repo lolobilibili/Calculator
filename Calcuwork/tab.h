@@ -4,6 +4,7 @@
 #endif // TAB_H
 #include "calculator.h"
 #include "notepad.h"
+#include "todolist.h"
 #include <QTabWidget>
 
 class Tab : public QWidget{
@@ -16,6 +17,7 @@ public:
 private:
     QTabWidget* maintab;
     Calculator* calpage;
+    Todolist* todopage;
     Notepad* textpage;
 
     // QWidget interface

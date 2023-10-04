@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/finished.png</file>
+        <file>images/delete.png</file>
+        <file>images/unfinished.png</file>
+        <file>images/clear.png</file>
+        <file>images/edit.png</file>
+        <file>images/add.png</file>
+        <file>images/minus.png</file>
+        <file>images/delete_all.png</file>
+    </qresource>
+</RCC>
