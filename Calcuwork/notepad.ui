@@ -51,7 +51,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/new.png</normaloff>:/images/images/new.png</iconset>
    </property>
    <property name="text">
@@ -66,7 +66,7 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/open.png</normaloff>:/images/images/open.png</iconset>
    </property>
    <property name="text">
@@ -81,7 +81,7 @@
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/save.png</normaloff>:/images/images/save.png</iconset>
    </property>
    <property name="text">
@@ -96,7 +96,7 @@
   </action>
   <action name="actionSave_as">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/save_as.png</normaloff>:/images/images/save_as.png</iconset>
    </property>
    <property name="text">
@@ -111,7 +111,7 @@
   </action>
   <action name="actionPrint">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/print.png</normaloff>:/images/images/print.png</iconset>
    </property>
    <property name="text">
@@ -126,7 +126,7 @@
   </action>
   <action name="actionExit">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/exit.png</normaloff>:/images/images/exit.png</iconset>
    </property>
    <property name="text">
@@ -138,7 +138,7 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/copy.png</normaloff>:/images/images/copy.png</iconset>
    </property>
    <property name="text">
@@ -150,7 +150,7 @@
   </action>
   <action name="actionCut">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/cut.png</normaloff>:/images/images/cut.png</iconset>
    </property>
    <property name="text">
@@ -162,7 +162,7 @@
   </action>
   <action name="actionPaste">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/paste.png</normaloff>:/images/images/paste.png</iconset>
    </property>
    <property name="text">
@@ -174,7 +174,7 @@
   </action>
   <action name="actionUndo">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/edit_undo.png</normaloff>:/images/images/edit_undo.png</iconset>
    </property>
    <property name="text">
@@ -186,7 +186,7 @@
   </action>
   <action name="actionRedo">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/edit_redo.png</normaloff>:/images/images/edit_redo.png</iconset>
    </property>
    <property name="text">
@@ -198,7 +198,7 @@
   </action>
   <action name="actionFont">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/font.png</normaloff>:/images/images/font.png</iconset>
    </property>
    <property name="text">
@@ -213,7 +213,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/italic.png</normaloff>:/images/images/italic.png</iconset>
    </property>
    <property name="text">
@@ -231,7 +231,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/bold.png</normaloff>:/images/images/bold.png</iconset>
    </property>
    <property name="text">
@@ -249,7 +249,7 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/underline.png</normaloff>:/images/images/underline.png</iconset>
    </property>
    <property name="text">
@@ -264,7 +264,7 @@
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="notpad.qrc">
+    <iconset resource="resources.qrc">
      <normaloff>:/images/images/info.png</normaloff>:/images/images/info.png</iconset>
    </property>
    <property name="text">
@@ -277,7 +277,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="notpad.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -5,6 +5,7 @@ HEADERS       = button.h \
                 dialog.h \
                 dialog_edit.h \
                 notepad.h \
+                potato.h \
                 tab.h \
                 todolist.h
 SOURCES       = button.cpp \
@@ -13,6 +14,7 @@ SOURCES       = button.cpp \
                 dialog_edit.cpp \
                 main.cpp \
                 notepad.cpp \
+                potato.cpp \
                 tab.cpp \
                 todolist.cpp
 
@@ -24,6 +26,7 @@ FORMS += \
     dialog.ui \
     dialog_edit.ui \
     notepad.ui \
+    potato.ui \
     todolist.ui
 
 DISTFILES += \
@@ -47,4 +50,4 @@ DISTFILES += \
     images/underline.png
 
 RESOURCES += \
-    notpad.qrc
+    resources.qrc

@@ -35,7 +35,5 @@ private:
     int global_max_todo;
 
     // QWidget interface
-protected:
-    virtual void resizeEvent(QResizeEvent *event) override;
 };
 #endif // TODOLIST_H

@@ -4,13 +4,15 @@ debug/dialog.o
 debug/dialog_edit.o
 debug/main.o
 debug/notepad.o
+debug/potato.o
 debug/tab.o
 debug/todolist.o
-debug/qrc_notpad.o
+debug/qrc_resources.o
 debug/moc_button.o
 debug/moc_calculator.o
 debug/moc_dialog.o
 debug/moc_dialog_edit.o
 debug/moc_notepad.o
+debug/moc_potato.o
 debug/moc_tab.o
 debug/moc_todolist.o

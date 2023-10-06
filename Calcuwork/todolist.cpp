@@ -177,7 +177,7 @@ void Todolist::sync_sql(){
     }
     qDebug() << rownum;
     ui->tableWidget->setRowCount(rownum);
-    sync.exec("select id, content, status, daysleft, discription from todo order by daysleft");
+    sync.exec("select id, content, status, daysleft, discription from todo order by status desc, daysleft");
     qDebug()<< sync.lastError();
     int row = 0;
     while(sync.next()){
@@ -208,10 +208,4 @@ void Todolist::createANewRow(int row, QString todo, bool status, QString duedate
 
     item = new QTableWidgetItem(order);
     ui->tableWidget->setItem(row,4,item);
-}
-
-
-void Todolist::resizeEvent(QResizeEvent *event)
-{
-    ui->tableWidget->resize(event->size().width()-40,event->size().height()-60);
 }

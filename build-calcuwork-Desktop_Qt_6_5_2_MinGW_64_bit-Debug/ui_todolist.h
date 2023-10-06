@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QStatusBar>
@@ -32,6 +33,7 @@ public:
     QAction *actionedit;
     QAction *actionClear_finished;
     QWidget *centralwidget;
+    QGridLayout *gridLayout;
     QTableWidget *tableWidget;
     QStatusBar *statusbar;
     QToolBar *toolBar;
@@ -78,10 +80,11 @@ public:
         actionClear_finished->setIcon(icon6);
         centralwidget = new QWidget(Todolist);
         centralwidget->setObjectName("centralwidget");
+        gridLayout = new QGridLayout(centralwidget);
+        gridLayout->setObjectName("gridLayout");
         tableWidget = new QTableWidget(centralwidget);
         tableWidget->setObjectName("tableWidget");
         tableWidget->setEnabled(true);
-        tableWidget->setGeometry(QRect(20, 10, 761, 511));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -90,6 +93,9 @@ public:
         tableWidget->setSizeIncrement(QSize(0, 0));
         tableWidget->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         tableWidget->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
+
+        gridLayout->addWidget(tableWidget, 0, 0, 1, 1);
+
         Todolist->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(Todolist);
         statusbar->setObjectName("statusbar");

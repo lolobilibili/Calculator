@@ -2,6 +2,7 @@
 #include "calculator.h"
 #include "notepad.h"
 #include "todolist.h"
+#include "potato.h"
 
 #include <QTabWidget>
 #include <QSizePolicy>
@@ -16,8 +17,10 @@ Tab::Tab(QWidget* parent)
     calpage = new Calculator(this);
     todopage = new Todolist(this);
     textpage = new Notepad(this);
+    potatopage = new Potato(this);
     maintab->addTab(calpage,"Calculator");
     maintab->addTab(todopage,"Todo-list");
+    maintab->addTab(potatopage,"TomatoClock");
     maintab->addTab(textpage,"Notepad");
 }
 
