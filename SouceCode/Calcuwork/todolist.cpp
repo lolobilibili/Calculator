@@ -43,6 +43,7 @@ Todolist::Todolist(QWidget *parent)
         todoDB.exec(create_sql);
         qDebug() << sql_query.lastError();
     }
+    ui->toolBar->setContextMenuPolicy(Qt::NoContextMenu);
     global_max_todo = 0;
     QStringList header;
     header = {"代办事项" , "完成情况" , "剩余天数", "所需时间", "备注","添加顺序","开始日期"};
