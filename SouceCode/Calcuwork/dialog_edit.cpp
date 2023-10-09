@@ -25,7 +25,8 @@ Dialog_edit::Dialog_edit(QWidget *parent,int id, QDate date, QString todo, QStri
     ui->timeEdit->setTime(QTime::fromString(est_time));
     ui->plainTextEdit->setPlainText(discrip);
     ui->dateEdit_2->setDate(QDate::fromString(start,"yyyy-MM-dd"));
-     ui->timeEdit->setMinimumTime(QTime::fromString("00:00:01","hh:mm:ss"));
+    ui->timeEdit->setMinimumTime(QTime::fromString("00:30:00","hh:mm:ss"));
+    ui->timeEdit->setMaximumTime(QTime::fromString("05:00:00","hh:mm:ss"));
 }
 
 Dialog_edit::~Dialog_edit()

@@ -13,7 +13,8 @@ Dialog::Dialog(QWidget *parent) :
     ui->dateEdit->setDate(QDate::currentDate());
     ui->dateEdit_2->setDate(QDate::currentDate());
     ui->timeEdit->setTime(QTime::fromString("00:30:00","hh:mm:ss"));
-    ui->timeEdit->setMinimumTime(QTime::fromString("00:00:01","hh:mm:ss"));
+    ui->timeEdit->setMinimumTime(QTime::fromString("00:30:00","hh:mm:ss"));
+    ui->timeEdit->setMaximumTime(QTime::fromString("05:00:00","hh:mm:ss"));
 }
 
 Dialog::~Dialog()

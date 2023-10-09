@@ -234,7 +234,7 @@ void Todolist::createANewRow(int row, QString todo, bool status, QString duedate
 
 void Todolist::analyze(){
 
-    if (ui->tableWidget->rowCount() == 0){
+    if (ui->tableWidget->rowCount() <= 2){
         return;
     }
     QSqlQuery analyze;
@@ -247,7 +247,7 @@ void Todolist::analyze(){
     while(analyze.next()){
         content_str += analyze.value(0).toString();
         content_str += "|";
-        duration_str += QString::number(abs(analyze.value(1).toTime().secsTo(QTime::fromString("00:00:00","hh:mm:ss")))/1800);
+        duration_str += QString::number(abs(analyze.value(1).toTime().secsTo(QTime::fromString("00:00:00","hh:mm:ss"))/1800));
         duration_str += "|";
         time_str += ("'" + analyze.value(2).toString() + "'");
         time_str += "|";
