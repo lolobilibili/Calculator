@@ -46,7 +46,7 @@ Todolist::Todolist(QWidget *parent)
     ui->toolBar->setContextMenuPolicy(Qt::NoContextMenu);
     global_max_todo = 0;
     QStringList header;
-    header = {"Todo" , "Status" , "DaysLeft", "Est_time", "Discription","Add Order","Start Date"};
+    header = {"待办事项" , "是否完成" , "剩余天数", "预计时间", "备注","添加顺序","开始日期"};
     ui->tableWidget->setColumnCount(7);
     ui->tableWidget->setHorizontalHeaderLabels(header);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -238,7 +238,7 @@ void Todolist::analyze(){
         return;
     }
     QSqlQuery analyze;
-    analyze.exec("select content,est_time,start_date,status from todo where status != true");
+    analyze.exec("select content,daysleft,start_date,status from todo where status != true");
     qDebug() << analyze.lastError();
     QString content_str;
     QString time_str;
@@ -247,7 +247,7 @@ void Todolist::analyze(){
     while(analyze.next()){
         content_str += analyze.value(0).toString();
         content_str += "|";
-        duration_str += QString::number(abs(analyze.value(1).toTime().secsTo(QTime::fromString("00:00:00","hh:mm:ss"))/1800));
+        duration_str += QString::number(analyze.value(1).toInt());
         duration_str += "|";
         time_str += ("'" + analyze.value(2).toString() + "'");
         time_str += "|";

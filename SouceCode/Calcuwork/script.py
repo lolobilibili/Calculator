@@ -33,8 +33,6 @@ def gantt_graph(tasks_str,dates_str,durations_str):
     ax.xaxis_date()
     ax.xaxis.set_major_locator(mdates.WeekdayLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-    ax.set_xlabel('Date')
-    ax.set_ylabel('Tasks')
     ax.set_title('Basic Gantt Chart')
 
     # Step 8: Display the chart

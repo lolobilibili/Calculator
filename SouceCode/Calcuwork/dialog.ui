@@ -42,7 +42,7 @@
     <item row="3" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Estimated Time</string>
+       <string>预计时间</string>
       </property>
      </widget>
     </item>
@@ -76,21 +76,21 @@
     <item row="2" column="0">
      <widget class="QLabel" name="duetime">
       <property name="text">
-       <string>Due Date</string>
+       <string>截止日期</string>
       </property>
      </widget>
     </item>
     <item row="4" column="0">
      <widget class="QLabel" name="discription">
       <property name="text">
-       <string>Discription</string>
+       <string>备注</string>
       </property>
      </widget>
     </item>
     <item row="0" column="0">
      <widget class="QLabel" name="Content">
       <property name="text">
-       <string>Todo</string>
+       <string>待办事项</string>
       </property>
      </widget>
     </item>
@@ -107,7 +107,7 @@
     <item row="1" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Start Date</string>
+       <string>开始日期</string>
       </property>
      </widget>
     </item>

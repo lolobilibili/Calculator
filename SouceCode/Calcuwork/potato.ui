@@ -37,14 +37,14 @@
            </size>
           </property>
           <property name="text">
-           <string>Start</string>
+           <string>开始</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="pushButton_2">
           <property name="text">
-           <string>Reset</string>
+           <string>重置</string>
           </property>
          </widget>
         </item>
@@ -53,7 +53,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_3">
         <property name="text">
-         <string>Pause</string>
+         <string>暂停</string>
         </property>
        </widget>
       </item>
