@@ -17,10 +17,10 @@ Tab::Tab(QWidget* parent)
     todopage = new Todolist(this);
     textpage = new Notepad(this);
     potatopage = new Potato(this);
-    maintab->addTab(calpage,"计算器");
-    maintab->addTab(todopage,"待办事项");
-    maintab->addTab(potatopage,"番茄钟");
-    maintab->addTab(textpage,"记事本");
+    maintab->addTab(calpage,"Calculator");
+    maintab->addTab(todopage,"Todo");
+    maintab->addTab(potatopage,"Tomato-Clock");
+    maintab->addTab(textpage,"notepad");
     maintab->setFixedSize(600,400);
 }
 

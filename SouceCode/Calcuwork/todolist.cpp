@@ -46,7 +46,7 @@ Todolist::Todolist(QWidget *parent)
     ui->toolBar->setContextMenuPolicy(Qt::NoContextMenu);
     global_max_todo = 0;
     QStringList header;
-    header = {"代办事项" , "完成情况" , "剩余天数", "所需时间", "备注","添加顺序","开始日期"};
+    header = {"Todo" , "Status" , "DaysLeft", "Est_time", "Discription","Add Order","Start Date"};
     ui->tableWidget->setColumnCount(7);
     ui->tableWidget->setHorizontalHeaderLabels(header);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
