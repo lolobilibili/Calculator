@@ -7,4 +7,4 @@
  4. Simple Notepad
 
 Check Release to download and unzip the file and find the Calcuwork.exe to run the software.
-Notice that the Gantt graph is based on the Releaseanalyze.txt file in your user file.
+Notice that the Gantt graph is based on the Releaseanalyze.txt file in your user folder.
