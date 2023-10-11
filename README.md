@@ -6,5 +6,5 @@
  3. Simple Potato Clock
  4. Simple Notepad
 
-Check Release and unzip the file and find the Calcuwork.exe to run the software.
+Check Release to download and unzip the file and find the Calcuwork.exe to run the software.
 Notice that the Gantt graph is based on the Releaseanalyze.txt file in your user file.
