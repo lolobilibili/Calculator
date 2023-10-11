@@ -3,7 +3,7 @@
  
  1. Calculator
  2. To-do List management with a basic Gantt graph
- 3. Simple Potato Clock
+ 3. Simple Tomato Clock
  4. Simple Notepad
 
 Check Release to download and unzip the file and find the Calcuwork.exe to run the software.
