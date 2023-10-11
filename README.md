@@ -1,5 +1,5 @@
 # Calcuwork
- This is a productivity Windows software based on Qt-C++ and python script which can offer the functions of 
+ This is a offline lightweight productivity Windows software based on Qt-C++ and python script which can offer the functions of 
  
  1. Calculator
  2. To-do List management with a basic Gantt graph
